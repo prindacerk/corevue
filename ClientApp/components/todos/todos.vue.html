@@ -19,13 +19,10 @@
         <div>
             <form>
                 <div class="row">
-                    <div class="col-xs-6">
-                        <input v-model="newItemDescription" class="form-control"
-                               placeholder="I just remembered that I have to...">
+                    <div class="col-6">
+                        <input v-model="newItemDescription" class="form-control" placeholder="I just remembered that I have to...">
                     </div>
-                    <button v-on:click="addItem($event)" class="btn btn-primary">
-                        Add
-                    </button>
+                    <button type="submit" v-on:click="addItem($event)" class="btn btn-primary"> Add </button>
                 </div>
             </form>
         </div>

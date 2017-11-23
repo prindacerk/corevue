@@ -1,59 +1,64 @@
-.main-nav li .glyphicon {
-    margin-right: 10px;
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+    padding-top: 3.5rem;
 }
 
-/* Highlighting rules for nav menu items */
-.main-nav li a.router-link-active,
-.main-nav li a.router-link-active:hover,
-.main-nav li a.router-link-active:focus {
-    background-color: #4189C7;
-    color: white;
+/*
+ * Typography
+ */
+
+h1 {
+    padding-bottom: 9px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
 }
 
-/* Keep the nav menu independent of scrolling and on top of other items */
-.main-nav {
+/*
+ * Sidebar
+ */
+
+.sidebar {
     position: fixed;
-    top: 0;
+    top: 51px;
+    bottom: 0;
     left: 0;
-    right: 0;
-    z-index: 1;
+    z-index: 1000;
+    padding: 20px 0;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    border-right: 1px solid #eee;
 }
 
-@media (min-width: 768px) {
-    /* On small screens, convert the nav menu to a vertical sidebar */
-    .main-nav {
-        height: 100%;
-        width: calc(25% - 20px);
-    }
-    .main-nav .navbar {
-        border-radius: 0px;
-        border-width: 0px;
-        height: 100%;
-    }
-    .main-nav .navbar-header {
-        float: none;
-    }
-    .main-nav .navbar-collapse {
-        border-top: 1px solid #444;
-        padding: 0px;
-    }
-    .main-nav .navbar ul {
-        float: none;
-    }
-    .main-nav .navbar li {
-        float: none;
-        font-size: 15px;
-        margin: 6px;
-    }
-    .main-nav .navbar li a {
-        padding: 10px 16px;
-        border-radius: 4px;
-    }
-    .main-nav .navbar a {
-        /* If a menu item's text is too long, truncate it */
-        width: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+.sidebar .nav {
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-item {
+    width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+    margin-left: 0;
+}
+
+.sidebar .nav-link {
+    border-radius: 0;
+}
+
+/*
+ * Dashboard
+ */
+
+/* Placeholders */
+.placeholders {
+    padding-bottom: 3rem;
+}
+
+.placeholder img {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }

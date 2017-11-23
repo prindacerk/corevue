@@ -1,42 +1,28 @@
 <template>
-    <div class="main-nav">
-        <div class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="/">CoreVue</a>
-            </div>
-            <div class="clearfix"></div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <router-link to="/" :exact="true">
-                            <span class="glyphicon glyphicon-home"></span> Home
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link to="/counter">
-                            <span class="glyphicon glyphicon-education"></span> Counter
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link to="/fetchdata">
-                            <span class="glyphicon glyphicon-th-list"></span> Fetch data
-                        </router-link>
-                    </li>
-                    <li>
-                        <router-link to="/todos">
-                            <span class="glyphicon glyphicon-list-alt"></span> TODO list
-                        </router-link>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    <nav class="col-sm-3 col-md-2 d-none d-sm-block bg-light sidebar">
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <router-link to="/" :exact="true" class="nav-link active">
+                    <span class="glyphicon glyphicon-home"></span> Home
+                </router-link>
+            </li>
+            <li class="nav-item">
+                <router-link to="/counter" class="nav-link">
+                    <span class="glyphicon glyphicon-education"></span> Counter
+                </router-link>
+            </li>
+            <li class="nav-item">
+                <router-link to="/fetchdata" class="nav-link">
+                    <span class="glyphicon glyphicon-th-list"></span> Fetch data
+                </router-link>
+            </li>
+            <li class="nav-item">
+                <router-link to="/todos" class="nav-link">
+                    <span class="glyphicon glyphicon-list-alt"></span> TODO list
+                </router-link>
+            </li>
+        </ul>
+    </nav>
 </template>
 
-<style src="./navmenu.css" />
+<style src="./navmenu.css"></style>

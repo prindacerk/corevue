@@ -11,8 +11,7 @@ module.exports = (env) => {
         stats: { modules: false },
         context: __dirname,
         resolve: {
-            extensions: ['.js', '.ts'],
-            alias: { 'vue': 'vue/dist/vue.common.js' } 
+            extensions: ['.js', '.ts']
         },
         entry: { 'main': './ClientApp/boot.ts' },
         module: {
