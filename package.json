@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "devDependencies": {
-    "@types/jquery": "^3.2.16",
     "@types/webpack-env": "^1.13.2",
     "aspnet-webpack": "^2.0.1",
     "awesome-typescript-loader": "^3.4.0",
@@ -11,21 +10,22 @@
     "event-source-polyfill": "^0.0.7",
     "extract-text-webpack-plugin": "^2.1.2",
     "file-loader": "^0.9.0",
+    "isomorphic-fetch": "^2.2.1",
     "style-loader": "^0.13.2",
     "url-loader": "^0.5.9",
-    "webpack": "^2.7.0",
-    "webpack-hot-middleware": "^2.20.0"
-  },
-  "dependencies": {
-    "bootstrap": "^4.0.0-beta.2",
-    "isomorphic-fetch": "^2.2.1",
-    "jquery": "^3.2.1",
-    "popper.js": "^1.12.9",
-    "typescript": "^2.6.1",
     "vue": "^2.5.8",
     "vue-loader": "^13.5.0",
     "vue-property-decorator": "^6.0.0",
     "vue-router": "^3.0.1",
-    "vue-template-compiler": "^2.5.8"
+    "vue-template-compiler": "^2.5.8",
+    "webpack": "^2.7.0",
+    "webpack-hot-middleware": "^2.20.0"
+  },
+  "dependencies": {
+    "@types/jquery": "^3.2.16",
+    "bootstrap": "^4.0.0-beta.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.9",
+    "typescript": "^2.6.1"
   }
 }
