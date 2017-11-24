@@ -45,6 +45,13 @@ h1 {
     margin-left: 0;
 }
 
+    .sidebar li a.router-link-active,
+    .sidebar li a.router-link-active:hover,
+    .sidebar li a.router-link-active:focus {
+        background-color: #4189C7;
+        color: white;
+    }
+
 .sidebar .nav-link {
     border-radius: 0;
 }
